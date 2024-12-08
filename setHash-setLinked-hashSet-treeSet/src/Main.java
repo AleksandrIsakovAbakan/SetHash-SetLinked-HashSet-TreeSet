@@ -38,13 +38,13 @@ public class Main {
     public static void outputToConsoleElementsFromSetIntegers(Set<Integer> set){
 
         Set<Integer> set1 = new HashSet<>();
-        Set<Integer> set2 = new HashSet<>();
+        Set<Double> set2 = new HashSet<>();
 
         for (Integer integer : set){
             if ((integer > 15) && (integer % 2 == 0)){
                 set1.add(integer);
             } else {
-                set2.add(integer / 2);
+                set2.add((integer.doubleValue() / 2));
             }
         }
 
